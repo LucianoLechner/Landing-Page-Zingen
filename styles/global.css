@@ -23,46 +23,26 @@
     --text-color-primary: #F4F4F5;
 
     /* TIPOGRAFIA */
-    --ff-sans: 'Inter', system-ui, sans-serif;
-    --fw-base: 400;
-    --fw-md: 500;
-    --fw-bold: 800;
-    --fs-sm: 0.875rem; 
-    --fs-base: 1rem;
-    --fs-lg: 1.25rem;
-    --fs-xl: 1.5rem;
-    --fs-2xl: 2.5rem;
-}
+    --font-family: "Inter", sans-serif;
+    --h1-desk: 800 64px/120% var(--font-family);
+    --h2-desk: 800 48px/120% var(--font-family);
+    --h3-desk: 800 32px/120% var(--font-family);
+    --span-desk: 500 14px/100% var(--font-family);
+    --paragraph-desk: 400 16px/160% var(--font-family);
+    --a-desk: 500 16px/100% var(--font-family);
 
-html {
-    font-family: var(--ff-sans);
-    font-weight: var(--fw-base);
-    font-size: var(--fs-base);
-    line-height: 1.6;
-    color: var(--text-color-primary);
+
+    --h1-mobile: 800 40px/120% var(--font-family);
+    --h2-mobile: 800 24px/120% var(--font-family);
+    --h3-mobile: 800 20px/120% var(--font-family);
+    --span-mobile: 500 14px/100% var(--font-family);
+    --paragraph-mobile: 400 16px/160% var(--font-family);
+    --a-mobile: 500 14px/100% var(--font-family);
 }
 
 body{
     background-color: var(--background-color);
-}
-
-h1, h2, h3{
-    line-height: 1.2;
     color: var(--text-color-primary);
-    font-weight: var(--fw-bold);
-    letter-spacing: -0.04em;
-}
-
-h1 {
-    font-size: var(--fs-2xl);
-}
-
-h2 {
-    font-size: var(--fs-xl);
-}
-
-h3 {
-    font-size: var(--fs-lg);
 }
 
 a {
@@ -74,11 +54,44 @@ ul[role="list"]{
     list-style: none;
 }
 
+h1{
+    font: var(--h1-mobile);
+}
+
+h2{
+    font: var(--h2-mobile);
+}
+
+h3{
+    font: var(--h3-mobile);
+}
+
+span{
+    font: var(--span-mobile);
+}
+
+.paragraph{
+    font: var(--paragraph-mobile);
+}
+
 @media (width >= 80em){
+    h1{
+        font: var(--h1-desk);
+    }
     
-    :root{
-        --fs-lg: 2rem;
-        --fs-xl: 3rem;
-        --fs-2xl: 4rem;
+    h2{
+        font: var(--h2-desk);
+    }
+    
+    h3{
+        font: var(--h3-desk);
+    }
+    
+    span{
+        font: var(--span-desk);
+    }
+    
+    .paragraph{
+        font: var(--paragraph-desk);
     }
 }
