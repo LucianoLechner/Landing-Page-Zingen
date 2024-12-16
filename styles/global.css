@@ -30,6 +30,7 @@
     --span-desk: 500 14px/100% var(--font-family);
     --paragraph-desk: 400 16px/160% var(--font-family);
     --a-desk: 500 16px/100% var(--font-family);
+    --p-desk: 500 40px/140% var(--font-family);
 
 
     --h1-mobile: 800 40px/120% var(--font-family);
@@ -38,6 +39,7 @@
     --span-mobile: 500 14px/100% var(--font-family);
     --paragraph-mobile: 400 16px/160% var(--font-family);
     --a-mobile: 500 14px/100% var(--font-family);
+    --p-mobile: 500 20px/140% var(--font-family);
 }
 
 body{
