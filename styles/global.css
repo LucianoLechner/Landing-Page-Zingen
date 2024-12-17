@@ -11,6 +11,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -48,6 +49,7 @@
 body{
     background-color: var(--background-color);
     color: var(--text-color-primary);
+    overflow-x: hidden;
 }
 
 a {

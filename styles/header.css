@@ -21,6 +21,14 @@ header {
             & a {
                 color: var(--text-color-secondary);
                 font: var(--a-desk);
+                background: var(--brand-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                transition: .2s ease;
+            }
+
+            & a:hover{
+                color: transparent;
             }
         }
 
@@ -35,6 +43,24 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: 0.3s ease;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+
+        & .button::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background: var(--brand-gradient);
+            transition: 0.3s ease;
+            z-index: -1;
+        }
+
+        & .button:hover::after{
+            width: 100%;
         }
     }
 }

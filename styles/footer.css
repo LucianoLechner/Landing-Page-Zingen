@@ -45,6 +45,14 @@ footer {
                         line-height: 24px;
                         font-size: 16px;
                         text-transform: initial;
+                        background: var(--brand-gradient);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        transition: .2s ease;
+                    }
+
+                    & a:hover{
+                        color: transparent;
                     }
                 }
             }
