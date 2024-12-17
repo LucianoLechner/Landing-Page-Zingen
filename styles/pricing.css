@@ -1,0 +1,376 @@
+.pricing{
+    width: 1280px;
+    height: 890px;
+    padding: 80px 32px;
+    display: grid;
+    gap: 32px;
+    margin: 0 auto;
+
+    & .pricing-title{
+        display: grid;
+        gap: 8px;
+        width: 800px;
+        height: 138px;
+        margin: 0 auto;
+        text-align: center;
+
+        & p {
+            font: var(--span-desk);
+            letter-spacing: 0.08rem;
+            color: var(--brand-color-primary);
+            text-transform: uppercase;
+        }
+    }
+
+    & .pricing-card-container{
+        width: 1216px;
+        height: 560px;
+        display: grid;
+        gap: 32px;
+        grid-template-columns: 384px 384px 384px;
+
+        & .pricing-card, .pricing-card-select{
+            width: 100%;
+            background-color: var(--surface-color);
+            border-radius: 24px;
+        }
+
+        & .pricing-card{
+            margin: auto;
+            height: 480px;
+            padding: 32px;
+            /* border: 1px solid white; */
+
+            & :nth-child(4){
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                color: var(--text-color-secondary);
+            }
+
+            & .info-price{
+                display: grid;
+                width: 320px;
+                height: 224px;
+                margin: auto;
+                /* border: 1px solid white; */
+
+                & :nth-child(1){
+                    font-family: var(--font-family);
+                    font-weight: 800;
+                    font-size: 20px;
+                    letter-spacing: -0.04rem;
+                    color: var(--text-color-primary);
+                    line-height: 120%;
+                    padding-bottom: 4px;
+                }
+
+                & :nth-child(2){
+                    font: var(--paragraph-desk);
+                    color: var(--text-color-secondary);
+                }
+
+                & :nth-child(3){
+                    letter-spacing: -0.04rem;
+                    padding-block: 24px;
+                    display: inline-flex;
+                    align-items: end;
+
+                    & span{
+                        font: var(--paragraph-desk);
+                        color: var(--text-color-secondary);
+                    }
+                }
+                
+                & :nth-child(4){
+                    width: 320px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font: var(--a-desk);
+                    border-radius: 8px;
+                    padding: 12px 24px;
+                    line-height: 24px;
+                    border: 2px solid var(--text-color-primary);
+                }
+            }
+
+            & .spacing{
+                /* border: 1px solid red; */
+                width: 100%;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+
+            & nav {
+                width: 320px;
+                height: 128px;
+                /* border: 1px solid white; */
+
+                & ul {
+                    width: 100%;
+                    display: grid;
+                    gap: 16px;
+
+                    & li {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: var(--text-color-secondary);
+
+                        & img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .pricing-card-select{
+            height: 560px;
+            width: 100%;
+            display: grid;
+            margin: auto;
+            background: var(--brand-gradient);
+
+            & .border-card{
+                background-color: var(--surface-color);
+                border-radius: 24px;
+                height: 556px;
+                width: 380px;
+                padding: 72px 32px 32px 32px;
+                margin: auto;
+                position: relative;
+
+                & .info-select{
+                    display: grid;
+                    width: 320px;
+                    height: 224px;
+                    margin: auto;
+    
+                    & :nth-child(1){
+                        font-family: var(--font-family);
+                        font-weight: 800;
+                        font-size: 20px;
+                        letter-spacing: -0.04rem;
+                        color: var(--text-color-primary);
+                        line-height: 120%;
+                        padding-bottom: 4px;
+                    }
+    
+                    & :nth-child(2){
+                        font: var(--paragraph-desk);
+                        color: var(--text-color-secondary);
+                    }
+    
+                    & :nth-child(3){
+                        letter-spacing: -0.04rem;
+                        padding-block: 24px;
+                        display: inline-flex;
+                        align-items: end;
+    
+                        & span{
+                            font: var(--paragraph-desk);
+                            color: var(--text-color-secondary);
+                        }
+                    }
+                    
+                    & :nth-child(4){
+                        width: 320px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font: var(--a-desk);
+                        border-radius: 8px;
+                        padding: 12px 24px;
+                        line-height: 24px;
+                        color: var(--background-color);
+                        background-color: var(--text-color-primary);
+                    }
+                }
+
+                
+            & .spacing{
+                width: 100%;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+                & nav {
+                    width: 320px;
+                    height: 128px;
+    
+                    & ul {
+                        width: 100%;
+                        display: grid;
+                        gap: 16px;
+    
+                        & li {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: var(--text-color-secondary);
+    
+                            & img {
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.border-card::after{
+    content: '1 mês grátis';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 24px;
+    border-start-start-radius: 24px;
+    width: 156px;
+    height: 40px;
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-gradient);
+    color: var(--background-color);
+    font-family: var(--font-family);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 8%;
+    line-height: 16px;
+}
+
+@media (width < 80em){
+
+    .pricing{
+        width: 375px;
+        height: 1739px;
+        padding: 48px 24px;
+        display: grid;
+        gap: 32px;
+        margin: 0 auto;
+    
+        & .pricing-title{
+            width: 327px;
+            height: 109px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        & .pricing-card-container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 32px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 454px 502px 482px;
+    
+            & .pricing-card, .pricing-card-select{
+                width: 100%;
+                background-color: var(--surface-color);
+                border-radius: 24px;
+            }
+    
+            & .pricing-card{
+                width: 327px;
+                margin: auto;
+                height: 100%;
+                padding: 24px;
+    
+                & :nth-child(4){
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: var(--text-color-secondary);
+                }
+    
+                & .info-price{
+                    display: grid;
+                    width: 279px;
+                    height: 214px;
+                    margin: auto;
+                    
+                    & :nth-child(4){
+                        width: 279px;
+                        height: 48px;
+                    }
+                }
+    
+                & nav {
+                    width: 279px;
+                    height: 128px;
+                }
+            }
+    
+            & .pricing-card-select{
+                height: 100%;
+                width: 327px;
+                display: grid;
+                margin: auto;
+                background: var(--brand-gradient);
+    
+                & .border-card{
+                    background-color: var(--surface-color);
+                    border-radius: 24px;
+                    height: 498px;
+                    width: 323px;
+                    padding: 70px 22px 22px 22px;
+    
+                    & .info-select{
+                        display: grid;
+                        width: 277px;
+                        height: 212px;
+                        margin: auto;
+
+                        & :nth-child(4){
+                            width: 277px;
+                            height: 46px;
+                        }
+                    }
+
+                    & nav {
+                        width: 277px;
+                        height: 126px;
+                        margin: auto;
+        
+                        & ul {
+                            width: 277px;
+                            }
+                        }
+                }
+                
+            }
+        }
+    }
+}
+
