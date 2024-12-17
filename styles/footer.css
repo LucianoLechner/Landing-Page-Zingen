@@ -83,10 +83,10 @@ footer {
 
 @media (width < 80em){
     footer {
-        width: 375px;
+        width: 100%;
         height: 788px;
         margin: 0 auto;
-        padding: 48px 48px 24px 48px;
+        padding: 48px 0;
         display: grid;
         gap: 48px;
     

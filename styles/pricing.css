@@ -39,7 +39,6 @@
             margin: auto;
             height: 480px;
             padding: 32px;
-            /* border: 1px solid white; */
 
             & :nth-child(4){
                 font-family: var(--font-family);
@@ -53,7 +52,6 @@
                 width: 320px;
                 height: 224px;
                 margin: auto;
-                /* border: 1px solid white; */
 
                 & :nth-child(1){
                     font-family: var(--font-family);
@@ -93,11 +91,17 @@
                     padding: 12px 24px;
                     line-height: 24px;
                     border: 2px solid var(--text-color-primary);
+                    transition: 0.3s ease;
                 }
+
+                & :nth-child(4):hover{
+                    border-color: var(--brand-color-primary);
+                    color: var(--brand-color-primary);
+                }
+
             }
 
             & .spacing{
-                /* border: 1px solid red; */
                 width: 100%;
                 height: 64px;
                 display: flex;
@@ -114,7 +118,6 @@
             & nav {
                 width: 320px;
                 height: 128px;
-                /* border: 1px solid white; */
 
                 & ul {
                     width: 100%;
@@ -200,6 +203,24 @@
                         line-height: 24px;
                         color: var(--background-color);
                         background-color: var(--text-color-primary);
+                        transition: 0.3s ease;
+                        overflow: hidden;
+                        position: relative;
+                        z-index: 0;
+                    }
+
+                    & :nth-child(4)::after{
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 100%;
+                        background: var(--brand-gradient);
+                        transition: 0.3s ease;
+                        z-index: -1;
+                    }
+            
+                    & :nth-child(4):hover::after{
+                        width: 100%;
                     }
                 }
 
@@ -273,11 +294,13 @@
 @media (width < 80em){
 
     .pricing{
-        width: 375px;
+        width: 100%;
         height: 1739px;
-        padding: 48px 24px;
+        padding: 48px 0;
         display: grid;
         gap: 32px;
+        align-items: center;
+        justify-items: center;
         margin: 0 auto;
     
         & .pricing-title{
@@ -288,21 +311,23 @@
         }
     
         & .pricing-card-container{
-            width: 100%;
+            width: 327px;
             height: 100%;
             display: grid;
+            justify-items: center;
+            margin: 0 auto;
             gap: 32px;
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
             grid-template-rows: 454px 502px 482px;
     
             & .pricing-card, .pricing-card-select{
-                width: 100%;
+                width: 327px;
                 background-color: var(--surface-color);
                 border-radius: 24px;
             }
     
             & .pricing-card{
-                width: 327px;
+                width: 100%;
                 margin: auto;
                 height: 100%;
                 padding: 24px;
@@ -334,7 +359,7 @@
     
             & .pricing-card-select{
                 height: 100%;
-                width: 327px;
+                width: 100%;
                 display: grid;
                 margin: auto;
                 background: var(--brand-gradient);

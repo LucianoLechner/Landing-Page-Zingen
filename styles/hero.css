@@ -64,6 +64,12 @@
                 font-weight: 500;
                 outline: 1px solid var(--text-color-primary);
                 font-size: 16px;
+                transition: 0.3s ease;
+            }
+
+            & :nth-child(1):hover{
+                outline-color: var(--brand-color-secondary);
+                color: var(--brand-color-secondary);
             }
 
             & :nth-child(2){
