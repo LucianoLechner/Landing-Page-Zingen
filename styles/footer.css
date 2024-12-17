@@ -1,0 +1,124 @@
+footer {
+    width: 1280px;
+    height: 360px;
+    margin: 0 auto;
+    padding: 80px 32px 32px 32px;
+    display: grid;
+    gap: 80px;
+
+    & .footer-container{
+        width: 1216px;
+        height: 144px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        & img {
+            width: 84px;
+            height: 32px;
+        }
+
+        & nav {
+            width: 800px;
+            height: 100%;
+            display: flex;
+            gap: 64px;
+            align-items: start;
+            justify-content: space-around;
+
+            & ul {
+                display: grid;
+                gap: 20px;
+
+                & li {
+                    font-family: var(--font-family);
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 0.08rem;
+                    line-height: 100%;
+                    color: var(--brand-color-primary);
+                    text-transform: uppercase;
+
+                    & a {
+                        font-family: var(--a-desk);
+                        color: var(--text-color-secondary);
+                        line-height: 24px;
+                        font-size: 16px;
+                        text-transform: initial;
+                    }
+                }
+            }
+        }
+    }
+
+    & .icons{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        & p {
+            font-family: var(--font-family);
+            font-weight: 14px;
+            color: var(--text-color-secondary);
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (width < 80em){
+    footer {
+        width: 375px;
+        height: 788px;
+        margin: 0 auto;
+        padding: 48px 48px 24px 48px;
+        display: grid;
+        gap: 48px;
+    
+        & .footer-container{
+            width: 279px;
+            height: 596px;
+            margin: auto;
+            display: grid;
+            gap: 48px;
+
+    
+            & img {
+                width: 85px;
+                height: 32px;
+            }
+    
+            & nav {
+                width: 279px;
+                height: 516px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 64px;
+            }
+        }
+    
+        & .icons{
+            width: 279px;
+            height: 72px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 24px;
+    
+            & nav {
+                width: 168px;
+                height: 24px;
+                display: flex;
+                gap: 24px;
+            }
+        }
+    }
+}

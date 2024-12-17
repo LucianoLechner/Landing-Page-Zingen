@@ -86,6 +86,11 @@
     
             & .app {
                 display: grid;
+                width: 178px;
+
+                & img {
+                    width: 100%;
+                }
             }
     
             & .aside-img{
